@@ -1,0 +1,22 @@
+.Contacts {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 70px;
+    max-width: 79%;
+}
+
+.ContactsContent {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ContactsPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactsItem {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,33 @@
+.SliderPhotoContainer {
+    max-width: 900px;
+    height: 470px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.LeftArrow {
+    position: absolute;
+    left: 45px;
+    top: 235px;
+}
+
+.RightArrow {
+    position: absolute;
+    right: 45px;
+    top: 235px;
+}
+
+.SliderCaption {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SliderDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.SliderDescriptionTitle {
+    max-width: 360px;
+}

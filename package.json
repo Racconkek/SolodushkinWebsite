@@ -1,0 +1,26 @@
+{
+  "name": "solod",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "15"
+  },
+  "private": "true",
+  "main": "src/solod.server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "copyfiles --up 1 -e ./src/solod.server/node_modules/**/* ./src/solod.server/**/* ./src/assets/**/* dist/",
+    "start": "cross-env NODE_PATH=dist/solod.server/ node dist/solod.server/"
+  },
+  "keywords": [],
+  "author": "Miroshnichenko, Melnikova",
+  "license": "ISC",
+  "workspaces": [
+    "src/*"
+  ],
+  "dependencies": {
+    "config": "3.3.3",
+    "copyfiles": "^2.4.1",
+    "cross-env": "7.0.2"
+  }
+}

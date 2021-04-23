@@ -1,0 +1,28 @@
+.Home {
+    font-size: 30px;
+    min-height: 100%;
+    max-width: 79%;
+    margin-right: 50px;;
+}
+
+.HomeCoursesContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.HomeCoursesTitles {
+    margin-bottom: 7px;
+}
+
+.HomeBiographyContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 185px;
+}
+
+.HomeBiographyPhoto {
+    width: 510px;
+    height: 630px;
+}

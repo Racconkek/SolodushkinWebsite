@@ -1,0 +1,34 @@
+.Block {
+    display: flex;
+    flex-direction: column;
+    margin: 185px 50px 0 70px;
+}
+
+.BlockContent {
+    margin: 0;
+    padding: 0;
+}
+
+.BlockTitle {
+    font-weight: bold;
+    font-size: 41px;
+    letter-spacing: 0.02em;
+    margin-bottom: 35px;
+}
+
+.BlockLargeText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+
+.BlockSmallText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+}

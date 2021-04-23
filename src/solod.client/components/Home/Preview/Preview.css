@@ -1,0 +1,30 @@
+.MainImage {
+    max-width: 805px;
+    max-height: 510px;
+}
+
+.MainImageContainer {
+    margin-top: 100px;
+    max-width: 805px;
+    max-height: 510px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.MainSurname {
+    position: absolute;
+    bottom: 9px;
+    left: 22px;
+    z-index: 1;
+
+    width: 450px;
+    height: 80px;
+}
+
+.MainName {
+    width: 750px;
+    height: 80px;
+    font-style: normal;
+    font-weight: bold;
+}

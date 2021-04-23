@@ -1,0 +1,12 @@
+.Footer {
+    grid-column: 2 / 3;
+    border-top: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 550px 30px 70px;
+    max-width: 79%;
+}
+
+.FooterDescription {
+    font-size: 12px;
+}
