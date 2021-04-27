@@ -22,3 +22,6 @@ List.propTypes = {
     data: PropTypes.arrayOf(PropTypes.string).isRequired,
     dataStyle: PropTypes.string.isRequired
 }
+
+
+
