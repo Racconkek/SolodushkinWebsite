@@ -3,8 +3,9 @@ const path = require('path');
 const config = require('config');
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
-const routes = require('./routes.js');
+const routes = require('./routes');
 
 
 const publicDir = path.join(__dirname, 'public');
@@ -19,6 +20,7 @@ const url = 'mongodb+srv://' + config.get('dbUsername') +
 
 const app = express();
 app.use(express.static(publicDir));
+app.use(cors());
 
 routes(app);
 

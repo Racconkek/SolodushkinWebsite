@@ -8,10 +8,11 @@ export default function List({data, dataStyle}) {
     return <div className={'List'}>
         {
             data.map((item, i) => {
-                const index = i < 10 ? '0' + i : i
+                const index = i < 10 ? '0' + i : i;
+                const element = !item.resource? <div className={dataStyle}>{item}</div>: <a href={item.resource} className={dataStyle}>{item.name}</a>;
                 return <div key={index} className={'ListItem'}>
                     <div className={'ListIndex'}>{index}</div>
-                    <div className={dataStyle}>{item}</div>
+                    {element}
                 </div>
             })
         }
@@ -19,9 +20,12 @@ export default function List({data, dataStyle}) {
 }
 
 List.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.string).isRequired,
+    data: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.string),
+        PropTypes.arrayOf(PropTypes.shape({
+            name: PropTypes.string,
+            link: PropTypes.string
+        })).isRequired
+    ]),
     dataStyle: PropTypes.string.isRequired
 }
-
-
-

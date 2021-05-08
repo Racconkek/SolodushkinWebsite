@@ -2,6 +2,7 @@
   "name": "solod.server",
   "version": "1.0.0",
   "dependencies": {
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "mongodb": "^3.6.6",
@@ -9,7 +10,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "start": "cross-env NODE_PATH=../../dist/server/ node ../../dist/server/"
+    "start": "cross-env NODE_PATH=../../dist/solod.server/ node ../../dist/solod.server/"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

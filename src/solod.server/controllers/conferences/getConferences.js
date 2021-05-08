@@ -1,4 +1,4 @@
-const ConferenceModel = require('../models/conference.js');
+const ConferenceModel = require('../../models/conference.js');
 
 module.exports = async function getConferences(req, res) {
     ConferenceModel.find({}, (err, data) => {

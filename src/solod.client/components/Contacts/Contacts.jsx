@@ -4,7 +4,7 @@ import './Contacts.css';
 import Block from "../Block/Block.jsx";
 
 export default function Contacts() {
-    return <div className={'Contacts'}>
+    return <div className={'Contacts'} id={'Contacts'}>
         <span className={'BlockTitle'}>Контакты</span>
         <div className={'ContactsContent BlockLargeText'}>
             <div className={'ContactsPart'}>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import main from "../../../../assets/photo/main.png";
+import main from "../../../../../assets/photo/main.png";
 import './Preview.css';
 
 export default function Preview() {

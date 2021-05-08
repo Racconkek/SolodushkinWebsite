@@ -1,4 +1,4 @@
-const ProjectModel = require("../models/project.js");
+const ProjectModel = require("../../models/project.js");
 
 module.exports = async function getProjects(req, res) {
     ProjectModel.find({}, (err, data) => {

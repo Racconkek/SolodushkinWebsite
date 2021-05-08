@@ -6,14 +6,13 @@ import './Block.css';
 export default class Block extends React.Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
-        className: PropTypes.string
+        id: PropTypes.string
     }
 
     render() {
-        const blockContentsClassName = 'BlockContent' + this.props.className? this.props.className: '';
-        return <div className={'Block'}>
+        return <div className={'Block'} id={this.props.id}>
             <span className={'BlockTitle'}>{this.props.title}</span>
-            <div className={blockContentsClassName}>
+            <div className={'BlockContent'}>
                 {this.props.children}
             </div>
         </div>

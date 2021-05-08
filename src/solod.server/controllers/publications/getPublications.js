@@ -1,4 +1,4 @@
-const PublicationModel = require('../models/publication.js');
+const PublicationModel = require('../../models/publication.js');
 
 module.exports = async function getPublications(req, res) {
     PublicationModel.find({}, (err, data) => {
@@ -6,7 +6,6 @@ module.exports = async function getPublications(req, res) {
             console.log(err);
             res.status(500).send({messageerror: 'Error on find publications collection'});
         }
-
         res.json({data: data});
     })
 }
